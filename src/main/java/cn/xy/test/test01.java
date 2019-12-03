@@ -7,5 +7,6 @@ public class test01 {
 //		Long b = a + 2L;
 		a+= 2L;
 		System.out.println(a);
+		System.out.println("ddd");
 	}
 }
