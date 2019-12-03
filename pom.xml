@@ -1,0 +1,92 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>cn.xy</groupId>
+  <artifactId>P2999_Practice</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+  <properties>
+<!-- 文件拷贝,编译时的编码 -->
+<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+<maven.compiler.encoding>UTF-8</maven.compiler.encoding>
+<!-- 插件和jdk版本 -->
+<maven.compiler.source>9</maven.compiler.source>
+<maven.compiler.target>9</maven.compiler.target>
+<maven.compiler.compilerVersion>9</maven.compiler.compilerVersion>
+<java.version>9</java.version>
+<!-- jar版本 -->
+<spring.version>5.1.5.RELEASE</spring.version>
+<jackson.version>2.9.9</jackson.version>
+<aspectj.version>1.8.13</aspectj.version>
+</properties>
+<dependencies>	
+<!-- https://mvnrepository.com/artifact/junit/junit -->
+<dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>4.12</version>
+    <scope>test</scope>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+<dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>1.18.10</version>
+    <scope>provided</scope>
+</dependency>
+<!--  测试====== https://mvnrepository.com/artifact/org.springframework/spring-test -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-test</artifactId>
+    <version>${spring.version}</version>
+    <scope>test</scope>
+</dependency>
+<!-- aspectj====  https://mvnrepository.com/artifact/org.aspectj/aspectjrt -->
+<dependency>
+	<groupId>org.aspectj</groupId>
+	<artifactId>aspectjrt</artifactId>
+	<version>${aspectj.version}</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
+<dependency>
+	<groupId>org.aspectj</groupId>
+	<artifactId>aspectjweaver</artifactId>
+	<version>${aspectj.version}</version>
+</dependency>	
+<!-- 上下文 ===== https://mvnrepository.com/artifact/org.springframework/spring-context -->
+<dependency>
+	<groupId>org.springframework</groupId>
+	<artifactId>spring-context</artifactId>
+	<version>${spring.version}</version>
+</dependency>
+<!-- 注解=== https://mvnrepository.com/artifact/org.springframework/spring-aop -->
+<dependency>
+	<groupId>org.springframework</groupId>
+	<artifactId>spring-aop</artifactId>
+	<version>${spring.version}</version>
+</dependency>
+
+<!-- 数据库处理=== https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+<dependency>
+	<groupId>org.springframework</groupId>
+	<artifactId>spring-jdbc</artifactId>
+	<version>${spring.version}</version>
+</dependency>
+
+<!-- 事务=== https://mvnrepository.com/artifact/org.springframework/spring-tx -->
+<dependency>
+	<groupId>org.springframework</groupId>
+	<artifactId>spring-tx</artifactId>
+	<version>${spring.version}</version>
+</dependency>
+<!-- jdbc driver==== https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+<dependency>
+	<groupId>mysql</groupId>
+	<artifactId>mysql-connector-java</artifactId>
+	<version>5.1.47</version>
+</dependency>
+
+
+</dependencies>	
+</project>
